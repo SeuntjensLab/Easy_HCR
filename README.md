@@ -2,6 +2,9 @@
 
 This is a set of jupyter notebooks made to automate the creation of probe pairs for hybridization chain reactions (HCR). It relies and is heavily based on [insitu_probe_generator](https://github.com/rwnull/insitu_probe_generator) by Ryan Null
 
+If this notebook is helpfull for your research please cite the following preprint:
+Elagoz, A. M. et al. Optimization of Whole Mount RNA multiplexed in situ Hybridization Chain Reaction with Immunohistochemistry, Clearing and Imaging to visualize octopus neurogenesis. In preparation. (2022).
+
 These notebooks feature
 + Automated blasting and probe pair filtering to minimize off-target effects
 + Blasting on custom databases
