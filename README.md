@@ -1,4 +1,4 @@
-# easy_hcr
+# Easy_HCR
 
 This is a set of jupyter notebooks made to automate the creation of probe pairs for hybridization chain reactions (HCR). It relies and is heavily based on [insitu_probe_generator](https://github.com/rwnull/insitu_probe_generator) by Ryan Null
 
