@@ -43,7 +43,7 @@ To check check if blast is correctly installed run
 
 
 # Usage
-**NOTE: All of the following commends should be run from inside the folder of the script**. Check the first step of the installation on how to do it
+**NOTE: All of the following commands should be run from inside the folder of the script**. Check the first step of the installation on how to do it
 
 To activate the environment and launch jupyter, run the following commands
 
