@@ -43,7 +43,7 @@ To check check if blast is correctly installed run
 
 
 # Usage
-**NOTE: All of the following commands should be run from inside the folder of the script**. Check the first step of the installation on how to do it
+**NOTE: All of the following commands should be run from inside the folder of the script**. Check the first step of the installation on how to do it.
 
 To activate the environment and launch jupyter, run the following commands
 
@@ -51,3 +51,7 @@ To activate the environment and launch jupyter, run the following commands
     jupyter notebook
 
 Here you can launch the notebook you need!
+
+# Custom database creation
+
+Prepare your fasta file of your species of interest and follow the guidelines listed in the notebook: custom_database_creation.ipynb
