@@ -1,9 +1,13 @@
 # Easy_HCR
 
-This is a set of jupyter notebooks made to automate the creation of probe pairs for hybridization chain reactions (HCR). It relies and is heavily based on [insitu_probe_generator](https://github.com/rwnull/insitu_probe_generator) by Ryan Null
+This is a set of jupyter notebooks made to automate the creation of probe pairs for hybridization chain reactions (HCR). It relies and is heavily based on [insitu_probe_generator](https://github.com/rwnull/insitu_probe_generator) by Ryan Null.
 
-If this notebook is helpfull for your research please cite the following preprint:
-Elagoz, A. M. et al. Optimization of Whole Mount RNA multiplexed in situ Hybridization Chain Reaction with Immunohistochemistry, Clearing and Imaging to visualize octopus neurogenesis. In preparation. (2022).
+If this notebook is helpfull for your research please cite the following preprint and also the probe generator made by the Özpolat lab:
+
+Elagoz, A. M., Styfhals, R., Maccuro, S., Masin, L., Moons, L., & Seuntjens, E. (2022). Optimization of Whole Mount RNA multiplexed in situ Hybridization Chain Reaction with Immunohistochemistry, Clearing and Imaging to visualize octopus neurogenesis. BioRxiv. Retrieved from https://www.biorxiv.org/content/10.1101/2022.02.24.481749v1.full.pdf
+
+Kuehn, E., Clausen, D. S., Null, R. W., Metzger, B. M., Willis, A. D., & Özpolat, B. D. (2021). Segment number threshold determines juvenile onset of germline cluster expansion in Platynereis dumerilii. Journal of Experimental Zoology Part B: Molecular and Developmental Evolution. https://doi.org/10.1002/jez.b.23100
+
 
 These notebooks feature
 + Automated blasting and probe pair filtering to minimize off-target effects
@@ -30,7 +34,7 @@ Navigate to inside the downloaded folder containing the script by using the foll
 
     cd /d *replace this with the full path of the folder*
 
-Or the following command on macOS and Linus
+Or the following command on macOS and Linux
 
     cd *replace this with the full path of the folder*
 
