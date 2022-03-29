@@ -2,7 +2,7 @@
 
 This is a set of jupyter notebooks made to automate the creation of probe pairs for hybridization chain reactions (HCR). It relies and is heavily based on [insitu_probe_generator](https://github.com/rwnull/insitu_probe_generator) by Ryan Null.
 
-If this notebook is helpfull for your research please cite the following preprint and also the probe generator made by the Özpolat lab:
+If this notebook is helpful for your research, please cite the following preprint and also the probe generator made by the Özpolat lab:
 
 Elagoz, A. M., Styfhals, R., Maccuro, S., Masin, L., Moons, L., & Seuntjens, E. (2022). Optimization of Whole Mount RNA multiplexed in situ Hybridization Chain Reaction with Immunohistochemistry, Clearing and Imaging to visualize octopus neurogenesis. BioRxiv. Retrieved from https://www.biorxiv.org/content/10.1101/2022.02.24.481749v1.full.pdf
 
@@ -30,7 +30,7 @@ https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 We recommend installing all the required dependencies through [Miniconda](https://docs.conda.io/en/latest/miniconda.html), allowing the script to run inside a dedicated environment without interfering or causing conflicts with the host computer.
 After installing Miniconda, open Anaconda Prompt (on Windows) or a terminal on Linux and macOS
 
-Navigate to inside the downloaded folder containing the script by using the following command on Windows
+Navigate inside the downloaded folder containing the script by using the following command on Windows
 
     cd /d *replace this with the full path of the folder*
 
@@ -38,11 +38,11 @@ Or the following command on macOS and Linux
 
     cd *replace this with the full path of the folder*
 
-Then we need to create an enviroinment in which the script will. This can be done by running the following command
+Then we need to create an environment in which the script will. This can be done by running the following command
 
     conda env create -f hcr.yml
     
-To check check if blast is correctly installed run
+To check if blast is correctly installed run
 
     blastn
 
