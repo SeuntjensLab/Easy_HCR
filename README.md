@@ -24,7 +24,7 @@ Make sure that these are installed in your environment when you launch this note
 These will be automatically installed if you follow the installation guide below
 
 # Installation
-Depending on your needs, to fully automate the process you need to install blast on your local computer. Download the windows 64x file: ncbi-blast-2.12.0+-win64.exe  
+Depending on your needs, to fully automate the process you need to install BLAST on your local computer. Download the windows 64x file: ncbi-blast-2.12.0+-win64.exe  
 https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 
 We recommend installing all the required dependencies through [Miniconda](https://docs.conda.io/en/latest/miniconda.html), allowing the script to run inside a dedicated environment without interfering or causing conflicts with the host computer.
@@ -42,7 +42,7 @@ Then we need to create an environment in which the script will. This can be done
 
     conda env create -f hcr.yml
     
-To check if blast is correctly installed run
+To check if BLAST is correctly installed run
 
     blastn
 
