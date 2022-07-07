@@ -4,7 +4,7 @@ This is a set of jupyter notebooks made to automate the creation of probe pairs 
 
 If this notebook is helpful for your research, please cite the following preprint and also the probe generator made by the Özpolat lab:
 
-Elagoz, A. M., Styfhals, R., Maccuro, S., Masin, L., Moons, L., & Seuntjens, E. (2022). Optimization of Whole Mount RNA multiplexed in situ Hybridization Chain Reaction with Immunohistochemistry, Clearing and Imaging to visualize octopus neurogenesis. BioRxiv. Retrieved from https://www.biorxiv.org/content/10.1101/2022.02.24.481749v1.full.pdf
+Elagoz, A. M., Styfhals, R., Maccuro, S., Masin, L., Moons, L., & Seuntjens, E. (2022). Optimization of Whole Mount RNA Multiplexed in situ Hybridization Chain Reaction With Immunohistochemistry, Clearing and Imaging to Visualize Octopus Embryonic Neurogenesis. Frontiers in Physiology, 995.
 
 Kuehn, E., Clausen, D. S., Null, R. W., Metzger, B. M., Willis, A. D., & Özpolat, B. D. (2021). Segment number threshold determines juvenile onset of germline cluster expansion in Platynereis dumerilii. Journal of Experimental Zoology Part B: Molecular and Developmental Evolution. https://doi.org/10.1002/jez.b.23100
 
