@@ -4,9 +4,9 @@ This is a set of jupyter notebooks made to automate the creation of probe pairs 
 
 If this notebook is helpful for your research, please cite our paper and also the probe generator made by the Özpolat lab:
 
-Elagoz, A. M., Styfhals, R., Maccuro, S., Masin, L., Moons, L., & Seuntjens, E. (2022). Optimization of Whole Mount RNA Multiplexed in situ Hybridization Chain Reaction With Immunohistochemistry, Clearing and Imaging to Visualize Octopus Embryonic Neurogenesis. Frontiers in Physiology, 995. https://www.frontiersin.org/articles/10.3389/fphys.2022.882413/full
+    Elagoz, A. M., Styfhals, R., Maccuro, S., Masin, L., Moons, L., & Seuntjens, E. (2022). Optimization of Whole Mount RNA Multiplexed in situ Hybridization Chain     Reaction With Immunohistochemistry, Clearing and Imaging to Visualize Octopus Embryonic Neurogenesis. Frontiers in Physiology, 995.     https://www.frontiersin.org/articles/10.3389/fphys.2022.882413/full
 
-Kuehn, E., Clausen, D. S., Null, R. W., Metzger, B. M., Willis, A. D., & Özpolat, B. D. (2021). Segment number threshold determines juvenile onset of germline cluster expansion in Platynereis dumerilii. Journal of Experimental Zoology Part B: Molecular and Developmental Evolution. https://doi.org/10.1002/jez.b.23100
+    Kuehn, E., Clausen, D. S., Null, R. W., Metzger, B. M., Willis, A. D., & Özpolat, B. D. (2021). Segment number threshold determines juvenile onset of germline  cluster expansion in Platynereis dumerilii. Journal of Experimental Zoology Part B: Molecular and Developmental Evolution. https://doi.org/10.1002/jez.b.23100
 
 
 These notebooks feature
