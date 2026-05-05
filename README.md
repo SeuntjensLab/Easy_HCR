@@ -21,43 +21,72 @@ Make sure that these are installed in your environment when you launch this note
 + numpy
 + openpyxl
 
-These will be automatically installed if you follow the installation guide below
+These will be automatically installed if you follow the installation guide below.
 
-# Installation
-Depending on your needs, to fully automate the process you need to install BLAST on your local computer. Download the windows 64x file: ncbi-blast-2.12.0+-win64.exe  
+### Table of Contents  
+- [Installation](#installation)
+- [Usage](#usage)
+  - [1. Create custom databases](#1-create-the-necessary-custom-database)
+  - [2. Run Easy_HCR](#2-run-easy_hcr)
+
+## Installation
+The first step to fully automate the process is to install BLAST on your local computer.
+Download the windows 64x file: ncbi-blast-2.17.0+-win64.exe
 https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
 
 We recommend installing all the required dependencies through [Miniconda](https://docs.conda.io/en/latest/miniconda.html), allowing the script to run inside a dedicated environment without interfering or causing conflicts with the host computer.
 After installing Miniconda, open Anaconda Prompt (on Windows) or a terminal on Linux and macOS
 
-Navigate inside the downloaded folder containing the script by using the following command on Windows
+Navigate to a suitable working directory by using the following command on Windows:
 
-    cd /d *replace this with the full path of the folder*
+    `cd *replace this with the full path of the folder*`
+    (example: `cd Documents/Github`)
 
 Or the following command on macOS and Linux
 
-    cd *replace this with the full path of the folder*
+    `cd *replace this with the full path of the folder*`
 
-Then we need to create an environment in which the script will. This can be done by running the following command
+After that you need to download the Github repository and navigate in it using the commands:
 
-    conda env create -f hcr.yml
+    ```
+    git clone https://github.com/SeuntjensLab/Easy_HCR.git
+    cd Easy_HCR
+    ```
+
+Then you need to create a conda environment containing all the necessary dependencies. This can be done by running the following command:
+
+    `conda env create -f hcr.yml`
     
 To check if BLAST is correctly installed run
 
-    blastn
+    `blastn -version`
+
+You should see the following output:
+
+    ```
+    blastn: 2.17.0+
+     Package: blast 2.17.0, build Jul  1 2025 08:57:20
+    ```
 
 
-
-# Usage
-**NOTE: All of the following commands should be run from inside the folder of the script**. Check the first step of the installation on how to do it.
+## Usage
+> [!IMPORTANT]
+> All of the following commands should be run from inside the folder of the script.
 
 To activate the environment and launch jupyter, run the following commands
 
+    ```
     conda activate HCR
     jupyter notebook
+    ```
 
-Here you can launch the notebook you need!
+This will open a window in your web browser and you can then click on the notebook you need to open it and then run the commands.
 
-# Custom database creation
+### 1. Create the necessary custom database
 
 Prepare your fasta file of your species of interest and follow the guidelines listed in the notebook: custom_database_creation.ipynb
+
+### 2. Run Easy_HCR
+
+You can choose to run either the [**old version**](HCR_probe_QC_octopus.ipynb) of the script, which will map the probes **only against the *O. vulgaris* transcriptome** for quality check, or the [new version](HCR_probe_QC_octopus_modified_by_Enora.ipynb) improved by Enora Geslain. This **new version** will map the probe pairs (PP) **against the *O. vulgaris* transcriptome but also against the *O. vulgaris* and *O. sinensis* genomes** for the quality check.
+The new version also gives the possibility to map the PP only against the *O. vulgaris* transcriptome.
