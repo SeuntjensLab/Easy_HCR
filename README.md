@@ -25,11 +25,15 @@ These will be automatically installed if you follow the installation guide below
 
 ### Table of Contents  
 - [Installation](#installation)
+  - [First time](#first-time)
+  - [Already installed once](#already-installed-once)
 - [Usage](#usage)
   - [1. Create custom databases](#1-create-the-necessary-custom-database)
   - [2. Run Easy_HCR](#2-run-easy_hcr)
 
 ## Installation
+
+### First time
 The first step to fully automate the process is to install BLAST on your local computer.
 Download the windows 64x file: ncbi-blast-2.17.0+-win64.exe
 https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
@@ -63,6 +67,8 @@ You should see the following output:
 
     blastn: 2.17.0+
      Package: blast 2.17.0, build Jul  1 2025 08:57:20
+
+### Already installed once
 
 For those who already followed the installation steps once, you need to first uninstall Blast and install the newest version, rename your old Easy_HCR folder and then install the new environment using:
 
