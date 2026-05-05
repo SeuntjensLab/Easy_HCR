@@ -84,7 +84,8 @@ You need to **run this notebook ones per fasta file** and it can be run directly
 The different fasta files on which you need to run this script are present in the folder `necessary_files` except for the genome of *vulgaris*:
 - [Transcriptome](necessary_files/xcOctVulg1.1_MT_mergedPeaks_CDS.fa.gz) of *O. vulgaris*
 - [Genome](necessary_files/GCF_006345805.1_ASM634580v1_rna.fna.gz) of *O. sinensis*
-The genome of O. vulgaris can be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/951/406/725/GCA_951406725.2_xcOctVulg1.2/GCA_951406725.2_xcOctVulg1.2_genomic.fna.gz)
+
+The genome of O. vulgaris can be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/951/406/725/GCA_951406725.2_xcOctVulg1.2/GCA_951406725.2_xcOctVulg1.2_genomic.fna.gz).
 
 Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook.
 
