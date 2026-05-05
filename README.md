@@ -39,46 +39,39 @@ After installing Miniconda, open Anaconda Prompt (on Windows) or a terminal on L
 
 Navigate to a suitable working directory by using the following command on Windows:
 
-    `cd *replace this with the full path of the folder*`
-    (example: `cd Documents/Github`)
+    cd *replace this with the full path of the folder*
+    (example: cd Documents/Github)
 
 Or the following command on macOS and Linux
 
-    `cd *replace this with the full path of the folder*`
+    cd *replace this with the full path of the folder*
 
 After that you need to download the Github repository and navigate in it using the commands:
 
-    ```
     git clone https://github.com/SeuntjensLab/Easy_HCR.git
     cd Easy_HCR
-    ```
 
 Then you need to create a conda environment containing all the necessary dependencies. This can be done by running the following command:
 
-    `conda env create -f hcr.yml`
+    conda env create -f hcr.yml
     
 To check if BLAST is correctly installed run
 
-    `blastn -version`
+    blastn -version
 
 You should see the following output:
 
-    ```
     blastn: 2.17.0+
      Package: blast 2.17.0, build Jul  1 2025 08:57:20
-    ```
-
 
 ## Usage
 > [!IMPORTANT]
-> All of the following commands should be run from inside the folder of the script.
+> **All of the following commands should be run from inside the folder of the script.**
 
 To activate the environment and launch jupyter, run the following commands
 
-    ```
     conda activate HCR
     jupyter notebook
-    ```
 
 This will open a window in your web browser and you can then click on the notebook you need to open it and then run the commands.
 
