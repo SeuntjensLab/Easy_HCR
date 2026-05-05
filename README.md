@@ -64,6 +64,24 @@ You should see the following output:
     blastn: 2.17.0+
      Package: blast 2.17.0, build Jul  1 2025 08:57:20
 
+For those who already followed the installation steps once, you need to first uninstall Blast and install the newest version, rename your old Easy_HCR folder and then install the new environment using:
+
+    # Uninstall Blast
+    # Go in drive C > Programs > NCBI > blast-...+
+    # Double click on Uninstall-ncbi-blast-...+
+    # You can then follow the installation instructions of Blast [here](#installation)
+    # Move to your working directory
+    cd Documents/Github
+    # Change the name of the old folder
+    mv Easy_HCR/ Easy_HCR_old/
+    # Clone again the Easy_HCR github repository and navigate to it
+    git clone https://github.com/SeuntjensLab/Easy_HCR.git
+    cd Easy_HCR
+    # Remove the old conda environment
+    conda remove -n HCR --all
+    # Create a new conda environment
+    conda env create -f hcr.yml
+
 ## Usage
 > [!IMPORTANT]
 > **All of the following commands should be run from inside the folder of the script.**
@@ -85,7 +103,7 @@ The different fasta files on which you need to run this script are present in th
 - [Transcriptome](necessary_files/xcOctVulg1.1_MT_mergedPeaks_CDS.fa.gz) of *O. vulgaris*
 - [Genome](necessary_files/GCF_006345805.1_ASM634580v1_rna.fna.gz) of *O. sinensis*
 
-The genome of O. vulgaris can be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/951/406/725/GCA_951406725.2_xcOctVulg1.2/GCA_951406725.2_xcOctVulg1.2_genomic.fna.gz).
+The genome of *O. vulgaris* can be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/951/406/725/GCA_951406725.2_xcOctVulg1.2/GCA_951406725.2_xcOctVulg1.2_genomic.fna.gz).
 
 Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook.
 
