@@ -78,11 +78,15 @@ For those who already followed the installation steps once, you need to first un
     - Follow the installation instructions of Blast [here](#installation)
 - Move to your working directory:
 
-    `cd Documents/Github`
+    ```
+    cd Documents/Github
+    ```
 
 - Change the name of the old folder:
     
-    `mv Easy_HCR/ Easy_HCR_old/`
+    ```
+    mv Easy_HCR/ Easy_HCR_old/
+    ```
 
 - Clone again the Easy_HCR github repository and navigate to it
 
