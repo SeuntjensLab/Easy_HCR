@@ -77,10 +77,19 @@ This will open a window in your web browser and you can then click on the notebo
 
 ### 1. Create the necessary custom database
 
-Prepare your fasta file of your species of interest and follow the guidelines listed in the notebook: custom_database_creation.ipynb
+You will need to **prepare the different fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
+
+You need to **run this notebook ones per fasta file** and it can be run directly on the compressed files (finishing with extension .gz). 
+
+The different fasta files on which you need to run this script are present in the folder `necessary_files` except for the genome of *vulgaris*:
+- [Transcriptome](necessary_files/xcOctVulg1.1_MT_mergedPeaks_CDS.fa.gz) of *O. vulgaris*
+- [Genome](necessary_files/GCF_006345805.1_ASM634580v1_rna.fna.gz) of *O. sinensis*
+The genome of O. vulgaris can be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/951/406/725/GCA_951406725.2_xcOctVulg1.2/GCA_951406725.2_xcOctVulg1.2_genomic.fna.gz)
+
+Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook.
 
 ### 2. Run Easy_HCR
 
-You can choose to run either the [**old version**](HCR_probe_QC_octopus.ipynb) of the script, which will map the probes **only against the *O. vulgaris* transcriptome** for quality check, or the [new version](HCR_probe_QC_octopus_modified_by_Enora.ipynb) improved by Enora Geslain. This **new version** will map the probe pairs (PP) **against the *O. vulgaris* transcriptome but also against the *O. vulgaris* and *O. sinensis* genomes** for the quality check.
+You can choose to run either the [**old version**](HCR_probe_QC_octopus.ipynb) of the script, which will map the probes **only against the *O. vulgaris* transcriptome** for quality check, or the [new version](HCR_probe_QC_octopus_modified_by_Enora.ipynb) improved by Enora Geslain. This **new version** will map the probe pairs (PP) **against the *O. vulgaris* transcriptome but also against the *O. vulgaris* and *O. sinensis* genomes** for the quality check. For both scripts, you can just follow the instructions in the notebook.
 
 The new version also gives the possibility to map the PP only against the *O. vulgaris* transcriptome.
