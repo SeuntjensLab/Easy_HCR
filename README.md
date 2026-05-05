@@ -23,7 +23,7 @@ Make sure that these are installed in your environment when you launch this note
 
 These will be automatically installed if you follow the installation guide below.
 
-### Table of Contents  
+## Table of Contents  
 - [Installation](#installation)
   - [First time](#first-time)
   - [Already installed once](#already-installed-once)
