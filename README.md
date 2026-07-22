@@ -28,8 +28,12 @@ These will be automatically installed if you follow the installation guide below
   - [First time](#first-time)
   - [Already installed once](#already-installed-once)
 - [Usage](#usage)
-  - [1. Create custom databases](#1-create-the-necessary-custom-database)
-  - [2. Run Easy_HCR](#2-run-easy_hcr)
+  - [*Octopus vulgaris*](#octopus-vulgaris)
+    - [1. Create custom databases](#1-create-the-necessary-custom-databases)
+    - [2. Run Easy_HCR](#2-run-easy_hcr)
+  - [*Pomacea canaliculata*](#pomacea-canaliculata)
+    - [1. Create custom databases](#1-create-custom-databases)
+    - [2. Run Easy_HCR](#2-run)
 
 ## Installation
 
@@ -115,7 +119,7 @@ This will open a window in your web browser and you can then click on the notebo
 
 ### *Octopus vulgaris*
 
-#### 1. Create the necessary custom database
+#### 1. Create the necessary custom databases
 
 You will need to **prepare the different fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
 
@@ -129,7 +133,7 @@ The genome of *O. vulgaris* can be downloaded [**here**](https://ftp.ncbi.nlm.ni
 
 Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook.
 
-### 2. Run Easy_HCR
+#### 2. Run Easy_HCR
 
 You can choose to run either the [**old version**](HCR_probe_QC_octopus.ipynb) of the script, which will map the probes **only against the *O. vulgaris* transcriptome** for quality check, or the [new version](HCR_probe_QC_octopus_modified_by_Enora.ipynb) improved by Enora Geslain. This **new version** will map the probe pairs (PP) **against the *O. vulgaris* transcriptome but also against the *O. vulgaris* and *O. sinensis* genomes** for the quality check. For both scripts, you can just follow the instructions in the notebook.
 
@@ -137,7 +141,7 @@ The new version also gives the possibility to map the PP only against the *O. vu
 
 ### *Pomacea canaliculata* (apple snail)
 
-#### 1. Create the necessary custom database
+#### 1. Create custom databases
 
 You will need to **prepare the different fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
 
@@ -150,6 +154,6 @@ The genome of *P. canaliculata* can be downloaded [**here**](https://ftp.ncbi.nl
 
 Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook.
 
-### 2. Run Easy_HCR
+#### 2. Run
 
 You need to run the [**script**](HCR_probe_QC_apple-snail.ipynb) to generate probe pairs (PP) and map them against, first, the ***P. canaliculata* transcriptome** and then the ***P. canaliculata* whole genome** for quality check. To run the script, you can just follow the instructions in the notebook.
