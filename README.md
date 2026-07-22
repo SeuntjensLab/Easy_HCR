@@ -31,7 +31,7 @@ These will be automatically installed if you follow the installation guide below
   - [*Octopus vulgaris*](#octopus-vulgaris)
     - [1. Create custom databases](#1-create-the-necessary-custom-databases)
     - [2. Run Easy_HCR](#2-run-easy_hcr)
-  - [*Pomacea canaliculata*](#pomacea-canaliculata)
+  - [*Pomacea canaliculata*](#pomacea-canaliculata-apple-snail)
     - [1. Create custom databases](#1-create-custom-databases)
     - [2. Run Easy_HCR](#2-run)
 
