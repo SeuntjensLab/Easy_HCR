@@ -113,7 +113,9 @@ To activate the environment and launch jupyter, run the following commands
 
 This will open a window in your web browser and you can then click on the notebook you need to open it and then run the commands.
 
-### 1. Create the necessary custom database
+### *Octopus vulgaris*
+
+#### 1. Create the necessary custom database
 
 You will need to **prepare the different fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
 
@@ -132,3 +134,22 @@ Once it's downloaded you can place it in the `necessary_files` folder on your co
 You can choose to run either the [**old version**](HCR_probe_QC_octopus.ipynb) of the script, which will map the probes **only against the *O. vulgaris* transcriptome** for quality check, or the [new version](HCR_probe_QC_octopus_modified_by_Enora.ipynb) improved by Enora Geslain. This **new version** will map the probe pairs (PP) **against the *O. vulgaris* transcriptome but also against the *O. vulgaris* and *O. sinensis* genomes** for the quality check. For both scripts, you can just follow the instructions in the notebook.
 
 The new version also gives the possibility to map the PP only against the *O. vulgaris* transcriptome.
+
+### *Pomacea canaliculata* (apple snail)
+
+#### 1. Create the necessary custom database
+
+You will need to **prepare the different fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
+
+You need to **run this notebook ones per fasta file** and it can be run directly on the compressed files (finishing with extension .gz). 
+
+The different fasta files on which you need to run this script are present in the folder `necessary_files` except for the genome of *pomacea*:
+- [Transcriptome](necessary_files/GCF_003073045.1_ASM307304v1_cds_from_genomic.fna.gz) of *P. canaliculata*
+
+The genome of *P. canaliculata* can be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/073/045/GCF_003073045.1_ASM307304v1/GCF_003073045.1_ASM307304v1_genomic.fna.gz).
+
+Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook.
+
+### 2. Run Easy_HCR
+
+You need to run the [**script**](HCR_probe_QC_apple-snail.ipynb) to generate probe pairs (PP) and map them against, first, the ***P. canaliculata* transcriptome** and then the ***P. canaliculata* whole genome** for quality check. To run the script, you can just follow the instructions in the notebook.
