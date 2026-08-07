@@ -34,7 +34,7 @@ These will be automatically installed if you follow the installation guide below
   - [*Pomacea canaliculata*](#pomacea-canaliculata-apple-snail)
     - [1. Create custom databases](#1-create-custom-databases)
     - [2. Run Easy_HCR](#2-run)
-  - [*Other organisms*](#other-organisms)
+  - [Other organisms](#other-organisms)
     - [1. Gather necessary files](#1-gather-necessary-files)
     - [2. Create custom databases](#2-create-custom-databases)
     - [2. Run Easy_HCR](#3-run)
