@@ -34,6 +34,10 @@ These will be automatically installed if you follow the installation guide below
   - [*Pomacea canaliculata*](#pomacea-canaliculata-apple-snail)
     - [1. Create custom databases](#1-create-custom-databases)
     - [2. Run Easy_HCR](#2-run)
+  - [*Other organisms*](#other-organisms)
+    - [1. Gather necessary files](#1-gather-necessary-files)
+    - [2. Create custom databases](#2-create-custom-databases)
+    - [2. Run Easy_HCR](#3-run)
 
 ## Installation
 
@@ -157,3 +161,29 @@ Once it's downloaded you can place it in the `necessary_files` folder on your co
 #### 2. Run
 
 You need to run the [**script**](HCR_probe_QC_apple-snail.ipynb) to generate probe pairs (PP) and map them against, first, the ***P. canaliculata* transcriptome** and then the ***P. canaliculata* whole genome** for quality check. To run the script, you can just follow the instructions in the notebook.
+
+### Other organisms
+
+If you want to run the modified version from Enora on another organism to check the efficiency of your probes you can follow these steps
+
+#### 1. Gather necessary files
+
+First of all, you will need to download the necessary files for your target species. To be able to run this modified version you need a well annotated reference genome and you need to gather the following files:
+
+  - **FASTA file** of your reference **genome**
+  - **GTF file** of your reference **genome**
+  - **FASTA file** file containing your reference **transcriptome**
+
+#### 2. Create custom databases
+
+When you have gathered all these files, you need to **prepare the fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
+
+You need to **run this notebook once per fasta file** and it can be run directly on the compressed files (finishing with extension .gz).
+
+#### 3. Run
+
+To run Easy_HCR on your target species, you need to use [**this script**](HCR_probe_QC_other.ipynb) to generate probe pairs (PP) and map them against, first, the **transcriptome** of your species and then the **whole genome** for quality check. To run the script, you will need to adjust some parts:
+
+  - **cell 13** of the jupyter notebook: put the **correct GTF file** name
+  - **cell 15** of the jupyter notebook: put the **correct transcriptome** FASTA file name
+  - **cell 27** of the jupyter notebook: put the **correct genome** FASTA file name
