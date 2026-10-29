@@ -162,6 +162,25 @@ Once it's downloaded you can place it in the `necessary_files` folder on your co
 
 You need to run the [**script**](HCR_probe_QC_apple-snail.ipynb) to generate probe pairs (PP) and map them against, first, the ***P. canaliculata* transcriptome** and then the ***P. canaliculata* whole genome** for quality check. To run the script, you can just follow the instructions in the notebook.
 
+### *Mus musculus* (mouse)
+
+#### 1. Create custom databases
+
+You will need to **prepare the different fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
+
+You need to **run this notebook ones per fasta file** and it can be run directly on the compressed files (finishing with extension .gz). 
+
+The different fasta files on which you need to run this script are present in the folder `necessary_files` except for the genome of *M. musculus*:
+- [Transcriptome](necessary_files/cdna_short.fa.gz) of *M. musculus*
+
+The genome of *M. musculus* can be downloaded [**here**](http://ftp.ebi.ac.uk/pub/ensemblorganisms/GCA/000/001/635/9/ensembl/2026_04/genome/unmasked.fa.bgz).
+
+Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook to create the custom database.
+
+#### 2. Run
+
+You need to run the [**script**](HCR_probe_QC_apple-snail.ipynb) to generate probe pairs (PP) and map them against, first, the ***P. canaliculata* transcriptome** and then the ***P. canaliculata* whole genome** for quality check. To run the script, you can just follow the instructions in the notebook.
+
 ### Other organisms
 
 If you want to run the modified version from Enora on another organism to check the efficiency of your probes you can follow these steps
