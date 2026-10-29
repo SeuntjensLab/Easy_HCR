@@ -34,6 +34,10 @@ These will be automatically installed if you follow the installation guide below
   - [*Pomacea canaliculata*](#pomacea-canaliculata-apple-snail)
     - [1. Create custom databases](#1-create-custom-databases)
     - [2. Run Easy_HCR](#2-run)
+  - [*Mus musculus*](#mus-musculus-mouse)
+    - [1. Create custom databases](#1-create-the-custom-databases)
+    - [2. Download GTF file](#2-download-the-annotation-file)
+    - [3. Run Easy_HCR](#3-run-the-script)
   - [Other organisms](#other-organisms)
     - [1. Gather necessary files](#1-gather-necessary-files)
     - [2. Create custom databases](#2-create-custom-databases)
@@ -161,6 +165,31 @@ Once it's downloaded you can place it in the `necessary_files` folder on your co
 #### 2. Run
 
 You need to run the [**script**](HCR_probe_QC_apple-snail.ipynb) to generate probe pairs (PP) and map them against, first, the ***P. canaliculata* transcriptome** and then the ***P. canaliculata* whole genome** for quality check. To run the script, you can just follow the instructions in the notebook.
+
+### *Mus musculus* (mouse)
+
+#### 1. Create the custom databases
+
+You will need to **prepare the different fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
+
+You need to **run this notebook ones per fasta file** and it can be run directly on the compressed files (finishing with extension .gz). 
+
+The different fasta files on which you need to run this script are present in the folder `necessary_files` except for the genome of *M. musculus*:
+- [Transcriptome](necessary_files/cdna_short.fa.gz) of *M. musculus*
+
+The genome of *M. musculus* can be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.27_GRCm39/GCF_000001635.27_GRCm39_genomic.fna.gz).
+
+Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook to create the custom database.
+
+#### 2. Download the annotation file
+
+The annotation of *M. musculus* can be downloaded [**here**](https://ftp.ebi.ac.uk/pub/ensemblorganisms/GCA/000/001/635/9/ensembl/2026_04/geneset/genes.gtf.gz).
+
+Once it's downloaded you can place it in the `necessary_files` folder on your computer.
+
+#### 3. Run the script
+
+You need to run the [**script**](HCR_probe_QC_mouse_modified_by_Enora.ipynb) to generate probe pairs (PP) and map them against, first, the ***M.musculus* transcriptome** and then the ***M.musculus* whole genome** for quality check. To run the script, you can just follow the instructions in the notebook.
 
 ### Other organisms
 
