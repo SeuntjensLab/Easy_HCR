@@ -36,7 +36,8 @@ These will be automatically installed if you follow the installation guide below
     - [2. Run Easy_HCR](#2-run)
   - [*Mus musculus*](#mus-musculus-mouse)
     - [1. Create custom databases](#1-create-the-custom-databases)
-    - [2. Run Easy_HCR](#2-run-the-script)
+    - [2. Download GTF file](#2-download-the-annotation-file)
+    - [3. Run Easy_HCR](#3-run-the-script)
   - [Other organisms](#other-organisms)
     - [1. Gather necessary files](#1-gather-necessary-files)
     - [2. Create custom databases](#2-create-custom-databases)
@@ -180,7 +181,13 @@ The genome of *M. musculus* can be downloaded [**here**](https://ftp.ncbi.nlm.ni
 
 Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook to create the custom database.
 
-#### 2. Run the script
+#### 2. Download the annotation file
+
+The annotation of *M. musculus* can be downloaded [**here**](https://ftp.ebi.ac.uk/pub/ensemblorganisms/GCA/000/001/635/9/ensembl/2026_04/geneset/genes.gtf.gz).
+
+Once it's downloaded you can place it in the `necessary_files` folder on your computer.
+
+#### 3. Run the script
 
 You need to run the [**script**](HCR_probe_QC_mouse_modified_by_Enora.ipynb) to generate probe pairs (PP) and map them against, first, the ***M.musculus* transcriptome** and then the ***M.musculus* whole genome** for quality check. To run the script, you can just follow the instructions in the notebook.
 
