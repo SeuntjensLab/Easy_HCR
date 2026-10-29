@@ -174,12 +174,11 @@ You will need to **prepare the different fasta files** using the [custom_databas
 
 You need to **run this notebook ones per fasta file** and it can be run directly on the compressed files (finishing with extension .gz). 
 
-The different fasta files on which you need to run this script are present in the folder `necessary_files` except for the genome of *M. musculus*:
-- [Transcriptome](necessary_files/cdna_short.fa.gz) of *M. musculus*
+You need to put the different fasta files on which you need to run this script in the folder `necessary_files`:
+- Transcriptome of *M. musculus* (sent by Enora)
+- Genome of *M. musculus* which needs to be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.27_GRCm39/GCF_000001635.27_GRCm39_genomic.fna.gz).
 
-The genome of *M. musculus* can be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.27_GRCm39/GCF_000001635.27_GRCm39_genomic.fna.gz).
-
-Once it's downloaded you can place it in the `necessary_files` folder on your computer and then run the jupyter notebook to create the custom database.
+When they are moved in the `necessary_files` folder on your computer, you can run the jupyter notebook to create the custom database.
 
 #### 2. Download the annotation file
 
