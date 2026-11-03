@@ -178,7 +178,9 @@ You need to put the different fasta files on which you need to run this script i
 - Transcriptome of *M. musculus* (sent by Enora)
 - Genome of *M. musculus* which needs to be downloaded [**here**](https://ftp.ebi.ac.uk/pub/ensemblorganisms/GCA/000/001/635/9/ensembl/2026_04/genome/unmasked.fa.bgz) and then decompressed using:
 
-```python -c "import gzip; shutil = __import__('shutil'); f_in = gzip.open('unmasked.fa.bgz', 'rb'); f_out = open('unmasked.fa', 'wb'); shutil.copyfileobj(f_in, f_out); f_in.close(); f_out.close()"```
+```
+python -c "import gzip; shutil = __import__('shutil'); f_in = gzip.open('unmasked.fa.bgz', 'rb'); f_out = open('unmasked.fa', 'wb'); shutil.copyfileobj(f_in, f_out); f_in.close(); f_out.close()"
+```
 
 When they are moved in the `necessary_files` folder on your computer, you can run the jupyter notebook to create the custom database.
 
