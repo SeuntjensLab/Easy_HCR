@@ -172,11 +172,13 @@ You need to run the [**script**](HCR_probe_QC_apple-snail.ipynb) to generate pro
 
 You will need to **prepare the different fasta files** using the [custom_database_creation.ipynb](custom_database_creation.ipynb) jupyter notebook. You can just follow the instructions in the notebook.
 
-You need to **run this notebook ones per fasta file** and it can be run directly on the compressed files (finishing with extension .gz). 
+You need to **run this notebook ones per fasta file** and it can be run directly on the compressed files finishing with the extension .gz
 
 You need to put the different fasta files on which you need to run this script in the folder `necessary_files`:
 - Transcriptome of *M. musculus* (sent by Enora)
-- Genome of *M. musculus* which needs to be downloaded [**here**](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/635/GCF_000001635.27_GRCm39/GCF_000001635.27_GRCm39_genomic.fna.gz).
+- Genome of *M. musculus* which needs to be downloaded [**here**](https://ftp.ebi.ac.uk/pub/ensemblorganisms/GCA/000/001/635/9/ensembl/2026_04/genome/unmasked.fa.bgz) and then decompressed using:
+
+```python -c "import gzip; shutil = __import__('shutil'); f_in = gzip.open('unmasked.fa.bgz', 'rb'); f_out = open('unmasked.fa', 'wb'); shutil.copyfileobj(f_in, f_out); f_in.close(); f_out.close()"```
 
 When they are moved in the `necessary_files` folder on your computer, you can run the jupyter notebook to create the custom database.
 
